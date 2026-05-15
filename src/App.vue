@@ -47,13 +47,19 @@ const toggleTheme = () => {
     box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    padding: 20px;
-    line-height: 1.6;
-    transition: background-color 0.3s, color 0.3s;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: clamp(16px, 3vw, 48px); 
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .app-container {
@@ -64,8 +70,9 @@ body {
 }
 
 h1, h2, h3 {
-    color: inherit;
-    margin-bottom: 15px;
+  color: inherit;
+  margin-bottom: 15px;
+  font-size: clamp(1.5rem, 4vw, 2.5rem); 
 }
 
 a {

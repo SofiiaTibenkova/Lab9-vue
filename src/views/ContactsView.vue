@@ -20,7 +20,7 @@
 
 #contact-info {
   background-color: var(--card-bg);
-  padding: 30px;
+  padding: clamp(15px, 5vw, 30px); 
   border: 2px solid var(--primary);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
