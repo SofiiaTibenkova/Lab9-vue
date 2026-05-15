@@ -23,12 +23,11 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'; // Імпортуємо ref для створення реактивної змінної [cite: 457]
+import { ref } from 'vue'; 
 import { RouterLink } from 'vue-router';
 
 defineEmits(['toggle-theme']);
 
-// Реактивна змінна для керування станом меню (відкрито/закрито) 
 const menuOpen = ref(false); 
 </script>
 
@@ -43,7 +42,6 @@ const menuOpen = ref(false);
   align-items: center;
 }
 
-/* Ховаємо кнопку-бургер на десктопі [cite: 488] */
 .burger {
   display: none; 
   background: none;
@@ -70,26 +68,22 @@ const menuOpen = ref(false);
   padding-bottom: 2px;
 }
 
-/* --- АДАПТИВНІСТЬ (Media Queries) --- */
-/* Точка зламу для планшетів та телефонів [cite: 489] */
 @media (max-width: 768px) {
   .burger {
-    display: block; /* Показуємо бургер [cite: 490] */
+    display: block; 
   }
 
   .nav-menu ul {
-    display: none; /* Ховаємо стандартне горизонтальне меню [cite: 492] */
-    flex-direction: column; /* Вибудовуємо елементи вертикально [cite: 493] */
+    display: none; 
+    flex-direction: column; 
     align-items: center;
     padding: 10px;
   }
 
-  /* Якщо меню відкрите (є клас open), показуємо його [cite: 498] */
   .nav-menu.open ul {
     display: flex; 
   }
-  
-  /* Робимо кнопку зміни теми на всю ширину для зручності на телефоні */
+
   .theme-btn {
     width: 100%; 
   }
