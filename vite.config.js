@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
-  base: '/Lab8-vue/', 
+  base: '/Lab9-vue/', 
   plugins: [
     vue(),
   ],
