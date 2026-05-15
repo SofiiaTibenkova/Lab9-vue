@@ -63,10 +63,13 @@ body {
 }
 
 .app-container {
-    min-height: 100vh;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s, color 0.3s;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+
+  max-width: 1200px; 
+  margin: 0 auto;
 }
 
 h1, h2, h3 {

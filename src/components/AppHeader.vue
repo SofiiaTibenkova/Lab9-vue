@@ -87,5 +87,17 @@ const menuOpen = ref(false);
   .theme-btn {
     width: 100%; 
   }
+  @media (max-width: 480px) {
+  .header-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .burger {
+    align-self: flex-end;
+    margin-top: -45px; 
+   }
+  }
 }
 </style>

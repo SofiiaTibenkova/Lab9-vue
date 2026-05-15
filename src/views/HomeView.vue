@@ -61,6 +61,15 @@ const filteredProjects = computed(() => {
     max-width: 400px;
 }
 
+#about img {
+  width: 100%; 
+  max-width: 200px; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
